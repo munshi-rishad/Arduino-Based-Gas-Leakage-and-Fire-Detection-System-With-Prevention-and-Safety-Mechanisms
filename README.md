@@ -1,156 +1,111 @@
-\# Arduino-Based Gas Leakage and Fire Detection System With Prevention and Safety Mechanisms
+# Arduino-Based Gas Leakage and Fire Detection System With Prevention and Safety Mechanisms
 
+This project presents a low-cost, real-time gas leakage and fire detection system developed using an Arduino Uno. The system detects combustible gas leakage and flame hazards and automatically activates warning and prevention mechanisms.
 
+## Features
 
-This project presents a low-cost, real-time gas leakage and fire detection system developed using Arduino Uno. The system detects combustible gas and flame hazards and automatically activates warning and prevention mechanisms.
+- Real-time combustible gas detection using the MQ-2 gas sensor
+- Flame detection using an infrared flame sensor
+- Immediate audio warning using a buzzer
+- Visual warning using an LED
+- Real-time system status display using a 16×2 LCD
+- Automatic exhaust fan activation during gas leakage
+- Automatic gas supply shutoff using a servo motor
+- Emergency response when gas leakage and flame are detected simultaneously
 
+## Hardware Components
 
+- Arduino Uno R3
+- MQ-2 Gas Sensor
+- Flame Sensor Module
+- 16×2 LCD Display
+- Active Buzzer
+- Red LED
+- Servo Motor
+- Exhaust Fan
+- MOSFET
+- 220Ω Resistors
+- Breadboard
+- Jumper Wires
+- USB Power Cable
 
-\## Features
+## Working Principle
 
+The MQ-2 sensor continuously monitors the concentration of combustible gases. When the sensor reading exceeds the predefined safety threshold, the Arduino activates the buzzer, warning LED, exhaust fan, and servo-controlled gas shutoff mechanism.
 
+The flame sensor detects infrared radiation emitted by a flame. When a flame is detected, the Arduino activates the alarm system and displays a warning message on the LCD.
 
-\- Real-time combustible gas detection using the MQ-2 gas sensor.
+If gas leakage and flame are detected simultaneously, the system enters an emergency state and activates all available safety mechanisms.
 
-\- Flame detection using an infrared flame sensor.
+## Repository Contents
 
-\- Immediate audio warning using a buzzer.
+| File or Folder | Description |
+|---|---|
+| `Project_Code_Main/Project_Code.ino` | Main Arduino source code |
+| `Proteus File/` | Proteus circuit design, libraries, and simulation files |
+| `Semulation Code/` | Compiled and simulation-related Arduino files |
+| `Connection Setup.jpg` | Hardware connection setup |
+| `fan & Wifi Connection .txt` | Fan and Wi-Fi connection information |
+| `Project Report.docx` | Complete project report |
+| `Project_Proposal.docx` | Project proposal |
+| `Project-Presentationt.pptx` | Project presentation |
+| `simulation-screenshot.png` | Screenshot of the Proteus simulation |
+| `demo-video.mp4` | Project demonstration video stored using Git LFS |
 
-\- Visual warning using an LED.
+## Simulation Screenshot
 
-\- Real-time system status display using a 16×2 LCD.
+![Gas Leakage and Fire Detection System Simulation](./simulation-screenshot.png)
 
-\- Automatic exhaust fan activation during gas leakage.
+## Project Demo Video
 
-\- Automatic gas supply shutoff using a servo motor.
+Click the image below to open the project demonstration video:
 
-\- Emergency response when gas leakage and flame are detected together.
+[![Watch the Project Demo](./simulation-screenshot.png)](./demo-video.mp4)
 
+### Direct Video Link
 
+[▶ Open Project Demonstration Video](./demo-video.mp4)
 
-\## Hardware Components
+> **Note:** The demonstration video is stored using Git Large File Storage (Git LFS). Depending on the browser and GitHub preview support, the video may open in a separate page or download before playing.
 
+## Setup Instructions
 
+1. Connect the sensors and output devices according to the circuit diagram.
+2. Connect the Arduino Uno to the computer using a USB cable.
+3. Open `Project_Code_Main/Project_Code.ino` using the Arduino IDE.
+4. Select **Arduino Uno** from the board menu.
+5. Select the correct COM port.
+6. Verify and compile the Arduino code.
+7. Upload the program to the Arduino Uno.
+8. Allow the MQ-2 gas sensor sufficient time to warm up.
+9. Test the gas and flame sensors in a controlled and safe environment.
 
-\- Arduino Uno R3
+## System Response
 
-\- MQ-2 Gas Sensor
+| Condition | System Response |
+|---|---|
+| Normal environment | System remains in safe mode |
+| Mild gas presence | Warning displayed on the LCD |
+| Gas leakage detected | Buzzer, LED, exhaust fan, and gas shutoff activated |
+| Flame detected | Buzzer, LED, and flame warning activated |
+| Gas and flame detected | Continuous emergency alarm and all safety mechanisms activated |
 
-\- Flame Sensor Module
+## Safety Notice
 
-\- 16×2 LCD Display
+This project is an educational prototype and should not be treated as a certified commercial safety device.
 
-\- Active Buzzer
+For real-world deployment, certified gas sensors, industrial-grade ventilation systems, professionally installed gas shutoff valves, electrical isolation, and appropriate fire-safety equipment should be used.
 
-\- Red LED
+## Future Improvements
 
-\- Servo Motor
-
-\- Exhaust Fan
-
-\- MOSFET
-
-\- 220Ω Resistors
-
-\- Breadboard
-
-\- Jumper Wires
-
-\- USB Power Cable
-
-
-
-\## Working Principle
-
-
-
-The MQ-2 sensor continuously measures combustible gas concentration. When the sensor reading exceeds the predefined threshold, the Arduino activates the buzzer, LED, exhaust fan, and servo-controlled gas shutoff mechanism.
-
-
-
-The flame sensor detects infrared radiation generated by a flame. When a flame is detected, the system displays a warning message and activates the alarm mechanisms.
-
-
-
-\## Repository Contents
-
-
-
-\- `Project\_Code\_Main` — Main Arduino source code.
-
-\- `Proteus File` — Proteus circuit and simulation files.
-
-\- `Semulation Code` — Simulation-related source code.
-
-\- `Connection Setup` — Hardware connection details.
-
-\- `fan \& Wifi Connection` — Fan and communication connection information.
-
-\- `Project Report.docx` — Complete project report.
-
-\- `Project Proposal.docx` — Project proposal.
-
-\- `Project-Presentation.pptx` — Project presentation.
-
-\- `simulation-screenshot.png` — Simulation screenshot.
-
-\- `demo-video.mp4` — Project demonstration video.
-
-
-
-\## Simulation Screenshot
-
-
-
-!\[Simulation Screenshot](./simulation-screenshot.png)
-
-
-
-\## Project Demo Video
-
-
-
-Click the image below to open the project demonstration video.
-
-
-
-\[!\[Watch the Project Demo](./simulation-screenshot.png)](./demo-video.mp4)
-
-
-
-You can also open the video directly:
-
-
-
-\[▶ Watch Project Demonstration](./demo-video.mp4)
-
-
-
-\## Setup Instructions
-
-
-
-1\. Connect the sensors and output devices according to the circuit diagram.
-
-2\. Connect the Arduino Uno to the computer.
-
-3\. Open the main Arduino source code using Arduino IDE.
-
-4\. Select \*\*Arduino Uno\*\* from the board menu.
-
-5\. Select the correct COM port.
-
-6\. Compile and upload the program.
-
-7\. Allow the MQ-2 sensor to warm up.
-
-8\. Test the gas and flame sensors in a controlled and safe environment.
-
-
-
-\## Safety Notice
-
-
-
-This project is an educational prototype. A certified gas shutoff valve and professionally tested safety equipment should be used for real-world deployment.
-
+- IoT-based remote monitoring
+- Wi-Fi or GSM notifications
+- Mobile application integration
+- Solenoid-based gas shutoff valve
+- Battery backup system
+- Improved sensor calibration and filtering
+- Smart-home automation integration
+
+## Authors
+
+Developed as a capstone project for the **Microprocessor and Embedded Systems** course at the **American International University-Bangladesh (AIUB)**.
