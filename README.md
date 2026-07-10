@@ -56,12 +56,6 @@ If gas leakage and flame are detected simultaneously, the system enters an emerg
 
 ![Gas Leakage and Fire Detection System Simulation](./simulation-screenshot.png)
 
-## Project Demo Video
-
-Click the image below to open the project demonstration video:
-
-[![Watch the Project Demo](./simulation-screenshot.png)](./demo-video.mp4)
-
 ### Direct Video Link
 
 [▶ Open Project Demonstration Video](./demo-video.mp4)
@@ -95,17 +89,3 @@ Click the image below to open the project demonstration video:
 This project is an educational prototype and should not be treated as a certified commercial safety device.
 
 For real-world deployment, certified gas sensors, industrial-grade ventilation systems, professionally installed gas shutoff valves, electrical isolation, and appropriate fire-safety equipment should be used.
-
-## Future Improvements
-
-- IoT-based remote monitoring
-- Wi-Fi or GSM notifications
-- Mobile application integration
-- Solenoid-based gas shutoff valve
-- Battery backup system
-- Improved sensor calibration and filtering
-- Smart-home automation integration
-
-## Authors
-
-Developed as a capstone project for the **Microprocessor and Embedded Systems** course at the **American International University-Bangladesh (AIUB)**.
