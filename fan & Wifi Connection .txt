@@ -1,0 +1,15 @@
+Code upload time must wifi module er rx ba tx jekono akta tar khule code upload debo naile code upload hobe na 
+
+
+🔌 Connection (ডায়োড ছাড়া)
+
+তোমার IRFZ44N দিয়ে:
+
+Fan (+) → 5V
+Fan (-) → MOSFET Drain
+MOSFET Source → GND
+Arduino pin → 220Ω resistor → Gate
+Gate → GND এ 10kΩ resistor
+
+
+https://www.youtube.com/watch?v=UCQryxP97TM&t=326s
