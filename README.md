@@ -104,6 +104,7 @@ https://drive.google.com/file/d/1wD68LAWmDfM2FbtxOK6bFTiDMuHZdvbH/view?usp=shari
 5. Test the gas and flame detection functions.
 6. For complete implementation details, refer to the project report and presentation.
 
-## Repository
+ Clone the repository to your local machine:
 
-This repository contains the complete project resources, including source code, simulation files, documentation, connection notes, and project photographs.
+   ```bash
+   git clone https://github.com/munshi-rishad/Arduino-Based-Gas-Leakage-and-Fire-Detection-System-With-Prevention-and-Safety-Mechanisms.git
