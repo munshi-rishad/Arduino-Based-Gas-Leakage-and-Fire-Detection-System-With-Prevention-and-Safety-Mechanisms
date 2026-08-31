@@ -15,37 +15,6 @@ An Arduino-based safety and prevention system designed to detect **gas leakage**
 - Proteus simulation files and sensor libraries.
 - Complete project report, proposal, and presentation included.
 
-## Project Structure
-
-```text
-Farm-Gas-Fire-Safety-System/
-├── Code/
-│   ├── Project_Code.ino
-│   ├── Project_final.ino
-│   ├── Project_final.ino.standard.hex
-│   └── Project_final.ino.with_bootloader.standard.hex
-├── Project_Documents/
-│   ├── Project Report.docx
-│   ├── Project_Proposal.docx
-│   └── Project-Presentationt.pptx
-├── Proteus_Simulation/
-│   ├── Project simulation.pdsprj
-│   ├── Project simulation.pdsprj.RISHAD.najiy.workspace
-│   ├── Flame Sensor Library for Proteus/
-│   ├── Gas Sensor Library for Proteus/
-│   ├── Proteus Simulation/
-│   └── Project_Backups/
-├── Screenshots/
-│   ├── 01_Connection_Diagram.jpg
-│   ├── 02_Proteus_Simulation.png
-│   ├── 03_Hardware_Project_Setup_1.png
-│   └── 04_Hardware_Project_Setup_2.png
-├── Notes/
-│   └── fan & Wifi Connection.txt
-├── .gitattributes
-└── README.md
-```
-
 ## Hardware & Software
 
 - Arduino Uno
