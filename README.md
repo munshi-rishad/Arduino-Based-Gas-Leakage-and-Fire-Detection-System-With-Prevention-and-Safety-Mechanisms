@@ -76,4 +76,4 @@ https://drive.google.com/file/d/1wD68LAWmDfM2FbtxOK6bFTiDMuHZdvbH/view?usp=shari
  Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/munshi-rishad/Arduino-Based-Gas-Leakage-and-Fire-Detection-System-With-Prevention-and-Safety-Mechanisms.git
+   git clone https://github.com/munshi-rishad/Microprocessor-Arduino-Based-Gas-Leakage-and-Fire-Detection-System-With-Prevention-and-Safety-Mechanisms.git
