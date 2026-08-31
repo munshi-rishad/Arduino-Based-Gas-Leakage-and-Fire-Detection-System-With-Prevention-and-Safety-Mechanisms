@@ -1,15 +1,35 @@
-Code upload time must wifi module er rx ba tx jekono akta tar khule code upload debo naile code upload hobe na 
+# Important Note – Code Upload & Fan Connection
 
+## Code Upload করার সময়
 
-🔌 Connection (ডায়োড ছাড়া)
+Arduino-তে **code upload করার আগে WiFi module-এর RX অথবা TX—যেকোনো একটি wire খুলে রাখতে হবে।**
 
-তোমার IRFZ44N দিয়ে:
+* RX/TX wire connected থাকলে code upload নাও হতে পারে।
+* তাই code upload করার আগে **RX অথবা TX যেকোনো একটি wire খুলে দিন।**
+* Code upload হয়ে গেলে wireটি আবার **সঠিকভাবে connect করে দিন।**
 
-Fan (+) → 5V
-Fan (-) → MOSFET Drain
-MOSFET Source → GND
-Arduino pin → 220Ω resistor → Gate
-Gate → GND এ 10kΩ resistor
+## Fan Connection (ডায়োড ছাড়া)
 
+**IRFZ44 MOSFET** ব্যবহার করে Fan connection:
+
+* **Fan (+)** → **5V**
+* **Fan (-)** → **MOSFET Drain**
+* **MOSFET Source** → **GND**
+* **Arduino Pin** → **220Ω Resistor** → **MOSFET Gate**
+* **Gate** → **10kΩ Resistor** → **GND**
+
+## Connection Flow
+
+**Arduino Pin → 220Ω Resistor → Gate → IRFZ44**
+
+**Fan (+) → 5V**
+
+**Fan (-) → MOSFET Drain**
+
+**MOSFET Source → GND**
+
+**Gate → 10kΩ Resistor → GND**
+
+## Reference Video
 
 https://www.youtube.com/watch?v=UCQryxP97TM&t=326s
